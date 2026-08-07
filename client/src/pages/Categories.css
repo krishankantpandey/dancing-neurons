@@ -1,0 +1,36 @@
+.categories h1 {
+  font-size: 1.3rem;
+  margin: 0 0 var(--space-5);
+}
+
+.categories__section {
+  margin-bottom: var(--space-6);
+}
+
+.categories__section h2 {
+  font-size: 1rem;
+  margin: 0 0 var(--space-3);
+}
+
+.categories__count {
+  color: var(--color-text-muted);
+  font-weight: 400;
+}
+
+.categories__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+}
+
+@media (min-width: 640px) {
+  .categories__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .categories__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

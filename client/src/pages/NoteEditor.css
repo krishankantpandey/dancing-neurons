@@ -1,0 +1,108 @@
+.note-editor h1 {
+  font-size: 1.3rem;
+  margin: 0 0 var(--space-4);
+}
+
+.note-editor__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  max-width: 560px;
+}
+
+.note-editor__form label {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+}
+
+.note-editor__optional {
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.note-editor__form input,
+.note-editor__form textarea,
+.note-editor__form select {
+  background: var(--color-surface-raised);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3);
+  font-size: 0.95rem;
+  color: var(--color-text);
+  resize: vertical;
+}
+
+.note-editor__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+}
+
+.note-editor__actions {
+  display: flex;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+.note-editor__actions button {
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-5);
+  font-weight: 600;
+  min-height: 44px;
+}
+
+.note-editor__actions button[type='submit'] {
+  background: var(--color-primary);
+  color: #0f1115;
+}
+
+.note-editor__delete {
+  background: transparent;
+  color: var(--color-danger);
+  border: 1px solid var(--color-danger) !important;
+}
+
+.note-editor__summary {
+  margin-top: var(--space-5);
+  max-width: 560px;
+}
+
+.note-editor__summary button {
+  background: var(--color-surface-raised);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  border-radius: var(--radius-sm);
+  padding: var(--space-2) var(--space-4);
+}
+
+.note-editor__summary-text {
+  margin-top: var(--space-3);
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.note-editor__related {
+  margin-top: var(--space-6);
+  max-width: 720px;
+}
+
+.note-editor__related h2 {
+  font-size: 1rem;
+  margin: 0 0 var(--space-3);
+}
+
+.note-editor__related-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+}
+
+@media (min-width: 640px) {
+  .note-editor__related-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

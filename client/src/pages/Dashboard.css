@@ -1,0 +1,32 @@
+.dashboard h1 {
+  font-size: 1.3rem;
+  margin: 0 0 var(--space-4);
+}
+
+.dashboard__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+}
+
+@media (min-width: 640px) {
+  .dashboard__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .dashboard__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.dashboard__cta {
+  display: inline-block;
+  margin-top: var(--space-3);
+  background: var(--color-primary);
+  color: #0f1115;
+  padding: var(--space-3) var(--space-5);
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+}
